@@ -96,10 +96,10 @@ export default {
         drawer: false,
         dialog: false,
         rs: [
-            ['组织结构', 'list', '/admin/organizations'],
-            ['用户-角色分配', 'assignment', ''],
-            ['角色-权限分配', 'assignment', ''],
-            ['权限', 'list', '']
+            ['用户管理', 'list', '/admin/user'],
+            ['组织结构', 'list', '/admin/role'],
+            ['用户-角色分配', 'assignment', '/admin/user_role'],
+            ['角色-权限分配', 'assignment', '/admin/sub_obj'],
         ]
     }),
     mounted() {

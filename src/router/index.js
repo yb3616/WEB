@@ -5,7 +5,10 @@ import Register from '@/components/Register';
 import Admin from '@/components/Admin';
 import Index from '@/components/Index';
 import ForgetPassword from '@/components/ForgetPassword';
-import Organization from '@/components/Organization';
+import Role from '@/components/Role';
+import UserRole from '@/components/UserRole';
+import SubObj from '@/components/SubObj';
+import User from '@/components/User';
 
 Vue.use(Router);
 
@@ -38,9 +41,24 @@ export default new Router({
             component: ForgetPassword,
         },
         {
-            path: '/admin/organizations',
-            name: 'Organization',
-            component: Organization,
+            path: '/admin/user_role',
+            name: 'UserRole',
+            component: UserRole,
+        },
+        {
+            path: '/admin/role',
+            name: 'Role',
+            component: Role,
+        },
+        {
+            path: '/admin/sub_obj',
+            name: 'SubObj',
+            component: SubObj,
+        },
+        {
+            path: '/admin/user',
+            name: 'User',
+            component: User,
         },
     ],
 });
